@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Summer Sale</title>
+</head>
+<body>
+    <header class="header" style="width: 100%;">
+        <section class="inner w-70">
+            <div class="header-text">
+                <h3 class="heading">---SALE FEVER---</h3>
+                <h1 class="description">Purchase TK200 or above & get <span class="text-pink">20% off</span></h1>
+                <h2 class="promo">Use Promo Code <span class="pink-back">SALE200</span></h2>
+            </div>
+            <div class="img-div">
+                <img src="images/Summer 1.png" alt="" class="banner-img">
+            </div>
+        </section>
+    </header>
+    <main class="w-70" style="margin: auto; margin-top: 100px;">
+        <section class="card-section">
+            <div class="item">
+                <h1 class="item-title">Kitchenware</h1>
+                <div class="card-container">
+                    <div class="card" id="kaccessories1" onclick="handle('kaccessories1')">
+                        <div class="card-img">
+                            <img src="images/prod1.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="kaccessories1-title">K. Accessories</h1>
+                        <h2 class="card-price"><span id="kaccessories1-price">39.00</span> TK</h2>
+                    </div>
+                    <div class="card" id="kaccessories2" onclick="handle('kaccessories2')">
+                        <div class="card-img">
+                            <img src="images/prod2.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="kaccessories2-title">K. Accessories</h1>
+                        <h2 class="card-price"><span id="kaccessories2-price">39.00</span> TK</h2>
+                    </div>
+                    <div class="card" id="home-cooker" onclick="handle('home-cooker')">
+                        <div class="card-img">
+                            <img src="images/prod3.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="home-cooker-title">Home Cooker</h1>
+                        <h2 class="card-price"> <span id="home-cooker-price">39.00</span> TK</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <h1 class="item-title">Sportsware</h1>
+                <div class="card-container">
+                    <div class="card" id="cap" onclick="handle('cap')">
+                        <div class="card-img">
+                            <img src="images/prod4.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="cap-title">Sports Black Cap</h1>
+                        <h2 class="card-price"><span id="cap-price">39.00</span> TK</h2>
+                    </div>
+                    <div class="card" id="jersey" onclick="handle('jersey')">
+                        <div class="card-img">
+                            <img src="images/prod5.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="jersey-title">Full Jersey Set</h1>
+                        <h2 class="card-price"><span id="jersey-price">39.00</span> TK</h2>
+                    </div>
+                    <div class="card" id="cates" onclick="handle('cates')">
+                        <div class="card-img">
+                            <img src="images/prod6.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="cates-title">Sports Cates</h1>
+                        <h2 class="card-price"><span id="cates-price">39.00</span> TK</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <h1 class="item-title">Furniture</h1>
+                <div class="card-container">
+                    <div class="card" id="relax-chair" onclick="handle('relax-chair')">
+                        <div class="card-img">
+                            <img src="images/prod7.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="relax-chair-title">Single Relax Chair</h1>
+                        <h2 class="card-price"><span id="relax-chair-price">39.00</span> TK</h2>
+                    </div>
+                    <div class="card" id="children-play" onclick="handle('children-play')">
+                        <div class="card-img">
+                            <img src="images/prod8.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="children-play-title">Children Play</h1>
+                        <h2 class="card-price"><span id="children-play-price">39.00</span> TK</h2>
+                    </div>
+                    <div class="card" id="sofa" onclick="handle('sofa')">
+                        <div class="card-img">
+                            <img src="images/prod9.png" alt="">
+                        </div>
+                        <h1 class="card-title" id="sofa-title">Flexible Sofa</h1>
+                        <h2 class="card-price"><span id="sofa-price">39.00</span> TK</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart-section" id="cart-section">
+            <div class="cart-container">
+                <h1 class="cart-title">Have Coupon?</h1>
+                <div class="coupon-field">
+                    <input type="text" name="" id="coupon-field" placeholder="Coupon code" style="padding: 10px 10px; border: 1px 1px 0px 1px;">
+                    <button class="btn" id="apply-btn">Apply</button>
+                </div>
+            </div>
+
+            <div class="cart-container">
+                <ol class="selected-items" id="selected-items">
+                </ol>
+                <hr>
+                <div class="payment-info">
+                    <h1 class="cart-title my-10">Total Price: </h1>
+                    <h1 class="cart-title my-10">Discount: </h1>
+                    <h1 class="cart-title my-10">Total: </h1>
+                </div>
+                <hr>
+                <button class="btn purchase-btn" id="purchase-btn" onclick="handle('purchase-btn')">Make Purchase</button>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- JS -->
+     <script src="js/dom.js"></script>
+</body>
+</html>

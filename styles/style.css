@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f3f3f3;
+}
+
+
+/* Shared */
+.w-70{
+    width: 80%;
+}
+.w-50{
+    width: 70%;
+}
+.w-30{
+    width: 70%;
+}
+
+.my-10{
+    margin: 10px 0px;
+}
+.my-50{
+    margin:50px 0px;
+}
+/* End Shared */
+.header{
+    background-color: #F9F6E2;
+    padding: 30px 0px;
+}
+.inner{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.inner>div{
+    flex: 1;
+    /* background-color: rebeccapurple; */
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.description{
+    font-size: 3rem;
+}
+.promo{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.text-pink{
+    color:#E527B2;
+}
+
+.pink-back{
+    background-color: #E527B2;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.pink-back:hover{
+    transform: scale(1.5,1.5);
+    cursor: not-allowed;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-div>img{
+    width: 100%;
+
+}
+.hr-color{
+    border-color: #c3c4c6;
+}
+
+.text-color{
+    color:#c3c4cc;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+.card-section{
+    width: 70%;
+}
+.item{
+    margin-bottom: 50px;
+}
+.item-title{
+    margin-bottom: 20px;
+}
+
+.card-container{
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.card-container > .card{
+    flex: 1;
+}
+
+.card{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    transition: 0.3s ease-in;    
+}
+
+.card:hover{
+    
+    background-color: #E527B2 ;
+    cursor: pointer;
+    transform: scale(1.03, 1.03) ;
+    margin: 0px 1px;
+    box-shadow: 5px 5px 10px   gray;
+}
+.card:active{
+    transition: 0.1s ;
+    transform: scale(1, 1);
+}
+.card-img{
+    background-color: #f3f3f3;
+    height: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.card-img>img{
+    width: fit-content;
+    height: 70%;
+}   
+
+.card-title{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    
+}
+.card-price{
+    font-size:1rem;
+    color: rgb(168, 169, 170);
+    font-weight: lighter;
+    /* margin-bottom:20px; */
+}
+
+.card:hover .card-title {
+    color: white;
+    text-shadow: 10px 10px 5px rgb(58, 57, 57);
+}
+.card:hover .card-price {
+    color: white;
+    text-shadow: 10px 10px 5px rgb(58, 57, 57);
+}
+
+
+
+
+.cart-section{
+    margin-top: 47px;
+}
+.cart-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.cart-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.coupon-field{
+    display: flex; 
+}
+
+input{
+    border:1px solid rgb(190, 184, 184);
+    border-right: 0px;
+    border-radius: 5px 0px 0px 5px; 
+}
+.btn{
+    padding: 15px 25px;
+    border: 1px solid #E527B2;
+    background-color: #E527B2;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    font-weight: bold;  
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #c91f9c;
+    cursor: pointer;
+}
+.selected-item{
+    display: flex;
+    justify-content: space-between;
+}
+.remove-btn{
+    height: 35px;
+    align-self: center;
+    background-color: red;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.remove-btn:hover{
+    background-color: rgb(200, 18, 18);
+    scale: 1.05 1.05 ;
+}
+.remove-btn:active{
+    transition: 0s;
+    scale: 1 1 ;
+    background-color: red;
+}
+.purchase-btn{
+    border-radius: 5px;
+}
+
+.purchase-btn:hover{
+    transform: scale(1.03, 1.03);
+    box-shadow: 5px 5px 10px   gray;
+}
+
+.purchase-btn:active{
+    transform: scale(1, 1);
+}
+
+
+/* Responsive for mobile */
+@media screen and (max-width : 576px) {
+    .header{
+        padding: 50px 0px;
+    }
+    .inner{
+        width: 95%;
+    }
+
+    .heading{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .description{
+        font-size: 1.5rem;
+    }
+    .promo{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .pink-back{
+        margin-left: 0px;
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+}
